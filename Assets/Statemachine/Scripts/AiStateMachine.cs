@@ -1,15 +1,13 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR;
-
-public enum State
-{
-    Shoot, Run, Patrol, Wiggle
-}
 
 public class AiStateMachine : MonoBehaviour
 {
+    public enum State
+    {
+        Shoot, Run, Patrol, Wiggle
+    }
+
     [SerializeField]
     private State _aiState = State.Shoot;
 
